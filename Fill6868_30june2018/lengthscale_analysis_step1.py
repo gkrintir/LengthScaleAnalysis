@@ -15,7 +15,7 @@ def generateTimeWindows(whichScan):
             ]
         end = [
             1530417537,         # -1sigma [end]
-            1530417537+15+55,   # 0sigma/head-on [start]
+            1530417537+15+55,   # 0sigma/head-on [end]
             1530417677          # +1sigma [start]
             ]
     if whichScan == "B1Y2":
