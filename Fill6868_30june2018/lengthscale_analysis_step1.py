@@ -248,7 +248,13 @@ def generateOffsetPositions(whichScan):
 
 def makeCalibPlot(whichScan,rootOutFile,pdfOutFile,headon_offset):
 
-    whichVtx = "vtx_y" #hardcoded, change accordingly for a X scan to "vtx_x"
+# previously it was hardcoded, change accordingly for a X scan to "vtx_x", now it'll pick up according to scan.
+
+    if 'X' in whichScan:
+        whichVtx = "vtx_x" 
+
+    if 'Y' in whichScan:
+        whichVtx = "vtx_y"
 
 
     print "Now for scan ", whichScan, " and vtx coordinate ", whichVtx
@@ -392,35 +398,37 @@ def makeCalibPlot(whichScan,rootOutFile,pdfOutFile,headon_offset):
 if __name__ == '__main__':
 
     string="nominalLHC_constrWindow_5points"
-    
-    #makeCalibPlot("B1Y1", "LScalib_B1Y1_v1.root", "plotsLScalib_B1Y1_"+string+"_p1.pdf", -0.0090549783)
-    #makeCalibPlot("B1Y2", "LScalib_B1Y2_v1.root", "plotsLScalib_B1Y2_"+string+"_p1.pdf", -0.0053316209)
-    #makeCalibPlot("B1Y3", "LScalib_B1Y3_v1.root", "plotsLScalib_B1Y3_"+string+"_p1.pdf", -0.0034340285) 
-    #makeCalibPlot("B1Y4", "LScalib_B1Y4_v1.root", "plotsLScalib_B1Y4_"+string+"_p1.pdf", -0.0012160167)
-    #makeCalibPlot("B1Y5", "LScalib_B1Y5_v1.root", "plotsLScalib_B1Y5_"+string+"_p1.pdf", 5.60434675659033E-005)
-
+   
+    ''' 
+    makeCalibPlot("B1Y1", "LScalib_B1Y1_v1.root", "plotsLScalib_B1Y1_"+string+"_p1.pdf", -0.0090549783)
+    makeCalibPlot("B1Y2", "LScalib_B1Y2_v1.root", "plotsLScalib_B1Y2_"+string+"_p1.pdf", -0.0053316209)
+    makeCalibPlot("B1Y3", "LScalib_B1Y3_v1.root", "plotsLScalib_B1Y3_"+string+"_p1.pdf", -0.0034340285) 
+    makeCalibPlot("B1Y4", "LScalib_B1Y4_v1.root", "plotsLScalib_B1Y4_"+string+"_p1.pdf", -0.0012160167)
+    makeCalibPlot("B1Y5", "LScalib_B1Y5_v1.root", "plotsLScalib_B1Y5_"+string+"_p1.pdf", 5.60434675659033E-005)
+    '''
     #makeCalibPlot("B2Y1", "LScalib_B2Y1_v1.root", "plotsLScalib_B2Y1_"+string+"_p1.pdf", -0.0097186146)
     #makeCalibPlot("B2Y2", "LScalib_B2Y2_v1.root", "plotsLScalib_B2Y2_"+string+"_p1.pdf", -0.009238353)
-    ####makeCalibPlot("B2Y3", "LScalib_B2Y3_v1.root", "plotsLScalib_B2Y3_"+string+"_p1.pdf", +2.78279793)   #### ???
-    ####makeCalibPlot("B2Y4", "LScalib_B2Y4_v1.root", "plotsLScalib_B2Y4_"+string+"_p1.pdf", -0.0057385531)
-    ###makeCalibPlot("B2Y5", "LScalib_B2Y5_v1.root", "plotsLScalib_B2Y5_"+string+"_p1.pdf", -0.0032780086)
+    #makeCalibPlot("B2Y3", "LScalib_B2Y3_v1.root", "plotsLScalib_B2Y3_"+string+"_p1.pdf", +2.78279793)   #### ???
+    #makeCalibPlot("B2Y4", "LScalib_B2Y4_v1.root", "plotsLScalib_B2Y4_"+string+"_p1.pdf", -0.0057385531)
+    makeCalibPlot("B2Y5", "LScalib_B2Y5_v1.root", "plotsLScalib_B2Y5_"+string+"_p1.pdf", -0.0032780086)
+
 
     #makeCalibPlot("B1X1", "LScalib_B1X1_v1.root", "plotsLScalib_B1X1_"+string+"_p1.pdf", 0.0011791675)
-    ####makeCalibPlot("B1X2", "LScalib_B1X2_v1.root", "plotsLScalib_B1X2_"+string+"_p1.pdf", 0.0010197544)
-    ####makeCalibPlot("B1X3", "LScalib_B1X3_v1.root", "plotsLScalib_B1X3_"+string+"_p1.pdf", 0.001250424) 
+    ###makeCalibPlot("B1X2", "LScalib_B1X2_v1.root", "plotsLScalib_B1X2_"+string+"_p1.pdf", 0.0010197544)
+    ##makeCalibPlot("B1X3", "LScalib_B1X3_v1.root", "plotsLScalib_B1X3_"+string+"_p1.pdf", 0.001250424) 
     #makeCalibPlot("B1X4", "LScalib_B1X4_v1.root", "plotsLScalib_B1X4_"+string+"_p1.pdf", 0.0002192976)
     #makeCalibPlot("B1X5", "LScalib_B1X5_v1.root", "plotsLScalib_B1X5_"+string+"_p1.pdf", -0.0005441598)
 
-    ###makeCalibPlot("B2X1", "LScalib_B2X1_v1.root", "plotsLScalib_B2X1_"+string+"_p1.pdf", 0.0009916055)
-    makeCalibPlot("B2X2", "LScalib_B2X2_v1.root", "plotsLScalib_B2X2_"+string+"_p1.pdf", 0.0025006518)
-    makeCalibPlot("B2X3", "LScalib_B2X3_v1.root", "plotsLScalib_B2X3_"+string+"_p1.pdf", 0.0002599927) 
-    makeCalibPlot("B2X4", "LScalib_B2X4_v1.root", "plotsLScalib_B2X4_"+string+"_p1.pdf", -0.0013423987)
-    makeCalibPlot("B2X5", "LScalib_B2X5_v1.root", "plotsLScalib_B2X5_"+string+"_p1.pdf", -0.0021442061)
+    #makeCalibPlot("B2X1", "LScalib_B2X1_v1.root", "plotsLScalib_B2X1_"+string+"_p1.pdf", 0.0009916055)
+    #makeCalibPlot("B2X2", "LScalib_B2X2_v1.root", "plotsLScalib_B2X2_"+string+"_p1.pdf", 0.0025006518)
+    #makeCalibPlot("B2X3", "LScalib_B2X3_v1.root", "plotsLScalib_B2X3_"+string+"_p1.pdf", 0.0002599927) 
+    #makeCalibPlot("B2X4", "LScalib_B2X4_v1.root", "plotsLScalib_B2X4_"+string+"_p1.pdf", -0.0013423987)
+    #makeCalibPlot("B2X5", "LScalib_B2X5_v1.root", "plotsLScalib_B2X5_"+string+"_p1.pdf", -0.0021442061)
 
 
 
 '''
-COMMENTS:
+COMMENTS (30Nov):
 1) B1X2, B1X3, B2X1 --> no files found
 2) B2Y5, B1X5, B2X2, B2X5 --> matrix not definite positive
 '''
