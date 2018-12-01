@@ -294,8 +294,12 @@ def makeCalibPlot(whichScan,rootOutFile,pdfOutFile,headon_offset):
 #    r.gStyle.SetPalette(1)
     r.gStyle.SetOptStat(1)
     r.gStyle.SetOptFit(1)
-    r.gStyle.SetStatX(0.95)
-    r.gStyle.SetStatY(0.5)
+    if whichVtx == "vtx_y":
+        r.gStyle.SetStatX(0.95)
+        r.gStyle.SetStatY(0.5)
+    if whichVtx == "vtx_x":
+        r.gStyle.SetStatX(0.5)
+        r.gStyle.SetStatY(0.55)
 
     hist = r.TH1F("hist",whichScan + " scan, " + whichVtx, 150, -0.15, 0.15) # hardcoded
 
@@ -423,7 +427,7 @@ if __name__ == '__main__':
     #makeCalibPlot("B2X2", "LScalib_B2X2_v1.root", "plotsLScalib_B2X2_"+string+"_p1.pdf", 0.0025006518)
     #makeCalibPlot("B2X3", "LScalib_B2X3_v1.root", "plotsLScalib_B2X3_"+string+"_p1.pdf", 0.0002599927) 
     #makeCalibPlot("B2X4", "LScalib_B2X4_v1.root", "plotsLScalib_B2X4_"+string+"_p1.pdf", -0.0013423987)
-    #makeCalibPlot("B2X5", "LScalib_B2X5_v1.root", "plotsLScalib_B2X5_"+string+"_p1.pdf", -0.0021442061)
+    makeCalibPlot("B2X5", "LScalib_B2X5_v1.root", "plotsLScalib_B2X5_"+string+"_p1.pdf", -0.0021442061)
 
 
 
