@@ -35,19 +35,20 @@ def makeCalibPlot(whichScan,rootOutFile,pdfOutFile):
     vtxVsOff_B2=r.TGraphErrors()
     vtxVsOff_B2.SetTitle("LS scan " + whichScan + " \"Fro\": Mean " + whichVtx + " position in microns vs nominal offset in microns")
 
-    if whichVtx == "vtx_y":
-        b1y = [-593.454123687, -471.98784292, -349.796310151, -226.333529033, -103.255592813 ] # bump position of beam 1 in Y
-        b1y1= [0.252894444764, 0.255665623143, 0.251476809901, 0.260806032363, 0.298014380403 ] # bump error of beam 1  in Y
-        
-        b2y = [-594.464129834, -472.493897786, -349.650709727, -226.419710847, -103.582486839] # bump position of beam 2 in Y
-        b2y1 = [0.140853, 0.256386, 0.192506, 0.330351, 0.163008] # bump error of beam 2  in Y
-
     if whichVtx == "vtx_x":
-        b1y = [1051.72577846, 929.535432632, 807.529, 685.191900906, 562.731948333]# bump position of beam 1 in X
-        b1y1 = [0.142445, 0.250039,  0.471316,  0.324029, 0.26413] #bump error of beam 1  in X
-    
-        b2y=[1051.84044706 ,929.848598418, 807.119033348, 685.405552484, 562.247677427] # bump position of beam 2 in X
-        b2y1=[0.288837663739 ,0.405783741016, 0.403196975094 , 0.286191565656, 0.291562812398] # bump error of beam 2  in X
+        b1y  = [ 1187.27,  1065.28,    942.85,   820.364,   696.743] # bump position of beam 1 in X                                          
+        b1y1 = [0.038818, 0.038572, 0.0390008, 0.0389241, 0.0389041] #bump error of beam 1  in X                                                          
+
+        b2y  = [   1189.8,   1067.31,   945.325,   822.942,   700.636] # bump position of beam 2 in X                                        
+        b2y1 = [0.0391417, 0.0390104, 0.0390423, 0.0404926, 0.0396366] # bump error of beam 2  in X   
+
+    if whichVtx == "vtx_y":
+        b1y  = [ -842.022,  -720.692,  -598.028,  -474.792,  -350.923] # bump position of beam 1 in Y
+        b1y1 = [0.0330917, 0.0326704, 0.0329135, 0.0328707, 0.0330651] # bump error of beam 1  in Y
+        
+        b2y  = [ -842.925,   -720.12,  -597.791,  -474.293,  -350.973] # bump position of beam 2 in Y
+        b2y1 = [0.0328497, 0.0330217, 0.0329944, 0.0326899, 0.0327999] # bump error of beam 2  in Y
+
 
     for i in range(0,5):
 
@@ -144,7 +145,7 @@ def makeCalibPlot(whichScan,rootOutFile,pdfOutFile):
     text2.SetNDC()
     text2.SetTextSize(0.05)
     text2.SetTextFont(62)
-    text=r.TLatex(0.90,0.91,"2017 (13 TeV)")
+    text=r.TLatex(0.90,0.91,"2018 (13 TeV)")
     text.SetNDC()
     #text.SetTextFont(62)
     text.SetTextSize(0.05)
