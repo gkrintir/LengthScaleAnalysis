@@ -7,6 +7,7 @@ def pruneTrees(filename):
     print 'filename :', filename
     import sys
     whichZeroBias = filename[93:105] #hard-coded
+    print whichZeroBias
     if 'ZeroBias' not in whichZeroBias:
         print "Problem with form of filename, assumed to be of a form such that filename[93:105] == ZeroBias, please check"
         sys.exit(1)
@@ -136,7 +137,7 @@ if __name__ == '__main__':
                         filesForScan[scanName].append(filename)
                         #if '274' in searchCond:
                         print 'found 274 re~~~~~~~~~~~', filename, scanName, filesForScan[scanName]
-                        break
+                        #break
 
     import pickle
     with open('./filesForScan.pkl', 'wb') as f:
