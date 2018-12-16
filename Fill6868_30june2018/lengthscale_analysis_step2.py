@@ -36,18 +36,18 @@ def makeCalibPlot(whichScan,rootOutFile,pdfOutFile):
     vtxVsOff_B2.SetTitle("LS scan " + whichScan + " \"Fro\": Mean " + whichVtx + " position in microns vs nominal offset in microns")
 
     if whichVtx == "vtx_x":
-        b1y  = [ 1187.27,  1065.28,    942.85,   820.364,   696.743] # bump position of beam 1 in X                                          
-        b1y1 = [0.038818, 0.038572, 0.0390008, 0.0389241, 0.0389041] #bump error of beam 1  in X                                                          
+        b1y  = [   1186,    1065,   941.5,   818.7,   695.8] # bump position of beam 1 in X                                          
+        b1y1 = [0.03989, 0.04008, 0.04036, 0.03995, 0.04025] # bump error of beam 1  in X                                                          
 
-        b2y  = [   1189.8,   1067.31,   945.325,   822.942,   700.636] # bump position of beam 2 in X                                        
-        b2y1 = [0.0391417, 0.0390104, 0.0390423, 0.0404926, 0.0396366] # bump error of beam 2  in X   
+        b2y  = [   1188,    1066,   944.1,   821.9,   699.5] # bump position of beam 2 in X                                        
+        b2y1 = [0.04036, 0.04023, 0.04025, 0.04199, 0.0409] # bump error of beam 2  in X   
 
     if whichVtx == "vtx_y":
-        b1y  = [ -842.022,  -720.692,  -598.028,  -474.792,  -350.923] # bump position of beam 1 in Y
-        b1y1 = [0.0330917, 0.0326704, 0.0329135, 0.0328707, 0.0330651] # bump error of beam 1  in Y
+        b1y  = [ -841.4,  -720.1,  -597.1,  -473.8,  -349.8] # bump position of beam 1 in Y
+        b1y1 = [0.03412, 0.03392, 0.03415, 0.03374, 0.03401] # bump error of beam 1  in Y
         
-        b2y  = [ -842.925,   -720.12,  -597.791,  -474.293,  -350.973] # bump position of beam 2 in Y
-        b2y1 = [0.0328497, 0.0330217, 0.0329944, 0.0326899, 0.0327999] # bump error of beam 2  in Y
+        b2y  = [ -841.4,  -718.8,  -596.7,  -472.8,  -350.3] # bump position of beam 2 in Y
+        b2y1 = [0.03391, 0.03399, 0.03416, 0.03364, 0.03385] # bump error of beam 2  in Y
 
 
     for i in range(0,5):
