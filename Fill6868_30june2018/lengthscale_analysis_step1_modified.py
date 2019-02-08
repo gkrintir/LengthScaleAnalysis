@@ -404,30 +404,31 @@ if __name__ == '__main__':
 
     string="nominalLHC_constrWindow_5points"
    
-    
-    makeCalibPlot("B1Y1", "LScalib_B1Y1_v1.root", "plotsLScalib_B1Y1_"+string+"_p1.pdf", -0.001758)
-    makeCalibPlot("B1Y2", "LScalib_B1Y2_v1.root", "plotsLScalib_B1Y2_"+string+"_p1.pdf", 0.0004347)
-    makeCalibPlot("B1Y3", "LScalib_B1Y3_v1.root", "plotsLScalib_B1Y3_"+string+"_p1.pdf", 0.002445) 
-    makeCalibPlot("B1Y4", "LScalib_B1Y4_v1.root", "plotsLScalib_B1Y4_"+string+"_p1.pdf", 0.004496)
-    makeCalibPlot("B1Y5", "LScalib_B1Y5_v1.root", "plotsLScalib_B1Y5_"+string+"_p1.pdf", 0.005625)
-
-    makeCalibPlot("B2Y1", "LScalib_B2Y1_v1.root", "plotsLScalib_B2Y1_"+string+"_p1.pdf", -0.002989)
-    makeCalibPlot("B2Y2", "LScalib_B2Y2_v1.root", "plotsLScalib_B2Y2_"+string+"_p1.pdf", -0.002618)
-    makeCalibPlot("B2Y3", "LScalib_B2Y3_v1.root", "plotsLScalib_B2Y3_"+string+"_p1.pdf", -0.002114)  
-    makeCalibPlot("B2Y4", "LScalib_B2Y4_v1.root", "plotsLScalib_B2Y4_"+string+"_p1.pdf", -0.0001373)
-    makeCalibPlot("B2Y5", "LScalib_B2Y5_v1.root", "plotsLScalib_B2Y5_"+string+"_p1.pdf", 0.002019)
-
-    makeCalibPlot("B1X1", "LScalib_B1X1_v1.root", "plotsLScalib_B1X1_"+string+"_p1.pdf", 0.00216)
-    makeCalibPlot("B1X2", "LScalib_B1X2_v1.root", "plotsLScalib_B1X2_"+string+"_p1.pdf", 0.001338)
-    makeCalibPlot("B1X3", "LScalib_B1X3_v1.root", "plotsLScalib_B1X3_"+string+"_p1.pdf", 0.002953) 
-    makeCalibPlot("B1X4", "LScalib_B1X4_v1.root", "plotsLScalib_B1X4_"+string+"_p1.pdf", 0.001919)
-    makeCalibPlot("B1X5", "LScalib_B1X5_v1.root", "plotsLScalib_B1X5_"+string+"_p1.pdf", 0.0007691)
-
-    makeCalibPlot("B2X1", "LScalib_B2X1_v1.root", "plotsLScalib_B2X1_"+string+"_p1.pdf", 0.0001857)
-    makeCalibPlot("B2X2", "LScalib_B2X2_v1.root", "plotsLScalib_B2X2_"+string+"_p1.pdf", -0.001289)
-    makeCalibPlot("B2X3", "LScalib_B2X3_v1.root", "plotsLScalib_B2X3_"+string+"_p1.pdf", -0.001603) 
-    makeCalibPlot("B2X4", "LScalib_B2X4_v1.root", "plotsLScalib_B2X4_"+string+"_p1.pdf", -0.001717)
-    makeCalibPlot("B2X5", "LScalib_B2X5_v1.root", "plotsLScalib_B2X5_"+string+"_p1.pdf", -0.003383)
+### values taken from http://nsahoo.web.cern.ch/nsahoo/LumiPOG/ATLAS_style_LSC/2018/FITS/SG_FittedGraphs_w_OrbitDrift.pdf    
+## scan 1-5
+    makeCalibPlot("B1Y1", "LScalib_B1Y1_v1.root", "plotsLScalib_B1Y1_"+string+"_p1.pdf", 0.00005318)
+    makeCalibPlot("B1Y2", "LScalib_B1Y2_v1.root", "plotsLScalib_B1Y2_"+string+"_p1.pdf", 0.0008831)
+    makeCalibPlot("B1Y3", "LScalib_B1Y3_v1.root", "plotsLScalib_B1Y3_"+string+"_p1.pdf", 0.001654) 
+    makeCalibPlot("B1Y4", "LScalib_B1Y4_v1.root", "plotsLScalib_B1Y4_"+string+"_p1.pdf", 0.003088)
+    makeCalibPlot("B1Y5", "LScalib_B1Y5_v1.root", "plotsLScalib_B1Y5_"+string+"_p1.pdf", 0.004081)
+## scan 6-10
+    makeCalibPlot("B1X1", "LScalib_B1X1_v1.root", "plotsLScalib_B1X1_"+string+"_p1.pdf", 0.002804)
+    makeCalibPlot("B1X2", "LScalib_B1X2_v1.root", "plotsLScalib_B1X2_"+string+"_p1.pdf", 0.002207)
+    makeCalibPlot("B1X3", "LScalib_B1X3_v1.root", "plotsLScalib_B1X3_"+string+"_p1.pdf", 0.003411)
+    makeCalibPlot("B1X4", "LScalib_B1X4_v1.root", "plotsLScalib_B1X4_"+string+"_p1.pdf", 0.002429)
+    makeCalibPlot("B1X5", "LScalib_B1X5_v1.root", "plotsLScalib_B1X5_"+string+"_p1.pdf", 0.002005)
+## scan 11-15
+    makeCalibPlot("B2Y1", "LScalib_B2Y1_v1.root", "plotsLScalib_B2Y1_"+string+"_p1.pdf", -0.003714)
+    makeCalibPlot("B2Y2", "LScalib_B2Y2_v1.root", "plotsLScalib_B2Y2_"+string+"_p1.pdf", -0.0009348)
+    makeCalibPlot("B2Y3", "LScalib_B2Y3_v1.root", "plotsLScalib_B2Y3_"+string+"_p1.pdf", -0.0007846)  
+    makeCalibPlot("B2Y4", "LScalib_B2Y4_v1.root", "plotsLScalib_B2Y4_"+string+"_p1.pdf", 0.001245)
+    makeCalibPlot("B2Y5", "LScalib_B2Y5_v1.root", "plotsLScalib_B2Y5_"+string+"_p1.pdf", 0.003632)
+## scan 16-20
+    makeCalibPlot("B2X1", "LScalib_B2X1_v1.root", "plotsLScalib_B2X1_"+string+"_p1.pdf", -0.0005713)
+    makeCalibPlot("B2X2", "LScalib_B2X2_v1.root", "plotsLScalib_B2X2_"+string+"_p1.pdf", -0.001221)
+    makeCalibPlot("B2X3", "LScalib_B2X3_v1.root", "plotsLScalib_B2X3_"+string+"_p1.pdf", -0.00206) 
+    makeCalibPlot("B2X4", "LScalib_B2X4_v1.root", "plotsLScalib_B2X4_"+string+"_p1.pdf", -0.002739)
+    makeCalibPlot("B2X5", "LScalib_B2X5_v1.root", "plotsLScalib_B2X5_"+string+"_p1.pdf", -0.003215)
 
 
 
