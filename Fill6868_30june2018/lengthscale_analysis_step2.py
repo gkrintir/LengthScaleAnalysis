@@ -54,10 +54,12 @@ def makeCalibPlot(whichScan,rootOutFile,pdfOutFile):
     for i in range(0,5):
 
         vtxVsOff_B1.SetPoint(i, nomOff[i],b1y[i])
-        vtxVsOff_B1.SetPointError(i, 0, b1y1[i])
+        #####vtxVsOff_B1.SetPointError(i, 0, b1y1[i])    # the chi2/dof from fit doesn't make sense 
+        vtxVsOff_B1.SetPointError(i, 0, b1y1[i]*10)
         
         vtxVsOff_B2.SetPoint(i, nomOff[i],b2y[i])
-        vtxVsOff_B2.SetPointError(i, 0, b2y1[i])
+        #####vtxVsOff_B2.SetPointError(i, 0, b2y1[i])   # the chi2/dof from fit doesn't make sense
+        vtxVsOff_B2.SetPointError(i, 0, b2y1[i]*10)
 
 
     pad1 = r.TPad('pad1', 'pad1', 0, 0., 1, 1)
