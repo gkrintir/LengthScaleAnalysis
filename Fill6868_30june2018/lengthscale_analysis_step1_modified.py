@@ -331,10 +331,11 @@ def makeCalibPlot(whichScan,rootOutFile,pdfOutFile,headon_offset):
         if histoList[index].GetEntries()==0:
             continue
         
-        histoList[index].Fit("gaus")
-        fit = histoList[index].GetFunction("gaus")
-        avVtxPos[index]=fit.GetParameter(1)
-        errAvVtxPos[index] = fit.GetParError(1)                
+        #Check impact of getting Hist Avg insteaf of Fit Mean
+        #histoList[index].Fit("gaus")
+        #fit = histoList[index].GetFunction("gaus")
+        avVtxPos[index]=histoList[index].GetMean(1)
+        errAvVtxPos[index] = histoList[index].GetRMS(1)                
         histoList[index].Draw()
         histoList[index].Write()
         canvas.SaveAs(pdfOutFile+"(")
