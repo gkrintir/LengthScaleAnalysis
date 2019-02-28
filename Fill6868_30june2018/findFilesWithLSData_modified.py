@@ -84,14 +84,14 @@ if __name__ == '__main__':
 
     prefix = "root://eoscms//eos/cms"
     dirListEOS = [ \
-        "/eos/cms/store/group/phys_top/gkrintir/ForLumiComputation/2018/NormalFills/6847_And_6854_And_6868/ZeroBias1/crab_CMSSW_10_1_7_ZeroBias1_splitPerBXTrue/180817_121608/0000/minituples_supersep/",
-        "/eos/cms/store/group/phys_top/gkrintir/ForLumiComputation/2018/NormalFills/6847_And_6854_And_6868/ZeroBias2/crab_CMSSW_10_1_7_ZeroBias2_splitPerBXTrue/180817_121630/0000/minituples_supersep/",
-        "/eos/cms/store/group/phys_top/gkrintir/ForLumiComputation/2018/NormalFills/6847_And_6854_And_6868/ZeroBias3/crab_CMSSW_10_1_7_ZeroBias3_splitPerBXTrue/180817_121652/0000/minituples_supersep/",
-        "/eos/cms/store/group/phys_top/gkrintir/ForLumiComputation/2018/NormalFills/6847_And_6854_And_6868/ZeroBias4/crab_CMSSW_10_1_7_ZeroBias4_splitPerBXTrue/180817_121713/0000/minituples_supersep/",
-        "/eos/cms/store/group/phys_top/gkrintir/ForLumiComputation/2018/NormalFills/6847_And_6854_And_6868/ZeroBias5/crab_CMSSW_10_1_7_ZeroBias5_splitPerBXTrue/180914_182538/0000/minituples_supersep/",
-        "/eos/cms/store/group/phys_top/gkrintir/ForLumiComputation/2018/NormalFills/6847_And_6854_And_6868/ZeroBias6/crab_CMSSW_10_1_7_ZeroBias6_splitPerBXTrue/180818_163932/0000/minituples_supersep/",
-        "/eos/cms/store/group/phys_top/gkrintir/ForLumiComputation/2018/NormalFills/6847_And_6854_And_6868/ZeroBias7/crab_CMSSW_10_1_7_ZeroBias7_splitPerBXTrue/180817_121826/0000/minituples_supersep/",
-        "/eos/cms/store/group/phys_top/gkrintir/ForLumiComputation/2018/NormalFills/6847_And_6854_And_6868/ZeroBias8/crab_CMSSW_10_1_7_ZeroBias8_splitPerBXTrue/180817_121848/0000/minituples_supersep/"
+        "/eos/cms/store/group/comm_luminosity/PCC/ForLumiComputation/2018/NormalFills/6847_And_6854_And_6868/ZeroBias1/crab_CMSSW_10_3_2_ZeroBias1_splitPerBXTrue/190130_015032/0000/",
+        "/eos/cms/store/group/comm_luminosity/PCC/ForLumiComputation/2018/NormalFills/6847_And_6854_And_6868/ZeroBias2/crab_CMSSW_10_3_2_ZeroBias2_splitPerBXTrue/190130_015051/0000/",
+        "/eos/cms/store/group/comm_luminosity/PCC/ForLumiComputation/2018/NormalFills/6847_And_6854_And_6868/ZeroBias3/crab_CMSSW_10_3_2_ZeroBias3_splitPerBXTrue/190203_194352/0000/",
+        "/eos/cms/store/group/comm_luminosity/PCC/ForLumiComputation/2018/NormalFills/6847_And_6854_And_6868/ZeroBias4/crab_CMSSW_10_3_2_ZeroBias4_splitPerBXTrue/190130_015127/0000/",
+        "/eos/cms/store/group/comm_luminosity/PCC/ForLumiComputation/2018/NormalFills/6847_And_6854_And_6868/ZeroBias5/crab_CMSSW_10_3_2_ZeroBias5_splitPerBXTrue/190203_194427/0000/",
+        "/eos/cms/store/group/phys_top/gkrintir/ForLumiComputation/2018/NormalFills/6847_And_6854_And_6868/ZeroBias6/crab_CMSSW_10_3_2_ZeroBias6_splitPerBXTrue/190130_015203/0000/",
+        "/eos/cms/store/group/comm_luminosity/PCC/ForLumiComputation/2018/NormalFills/6847_And_6854_And_6868/ZeroBias7/crab_CMSSW_10_3_2_ZeroBias7_splitPerBXTrue/190203_194457/0000/",
+        "/eos/cms/store/group/comm_luminosity/PCC/ForLumiComputation/2018/NormalFills/6847_And_6854_And_6868/ZeroBias8/crab_CMSSW_10_3_2_ZeroBias8_splitPerBXTrue/190130_015238/0000/"
         ]
     filesForScan = {"B1Y1":[],"B1Y2":[],"B1Y3":[], "B1Y4":[], "B1Y5":[], "B1X1":[],"B1X2":[],"B1X3":[], "B1X4":[], "B1X5":[],"B2Y1":[],"B2Y2":[],"B2Y3":[], "B2Y4":[], "B2Y5":[], "B2X1":[],"B2X2":[],"B2X3":[], "B2X4":[], "B2X5":[]}
     fileswithLSinfo = []
